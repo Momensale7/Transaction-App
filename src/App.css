@@ -9,3 +9,5 @@ tbody tr:nth-of-type(even) {
 tbody tr:last-child {
     border-bottom: 2px solid #1b1a1a ;
 }
+
+.activee{color:red}
