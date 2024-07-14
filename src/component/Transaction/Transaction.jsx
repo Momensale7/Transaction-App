@@ -5,10 +5,10 @@ export default function Transaction() {
     const { customers, transactions } = useContext(DataContext);
     let [filter, setFilter] = useState('')
     const [minAmountFilter, setMinAmountFilter] = useState('');
-    const [filterType, setFilterType] = useState("name"); // State to track radio button selection
+    const [filterType, setFilterType] = useState("name"); 
     const [maxAmountFilter, setMaxAmountFilter] = useState('');
     let [filteredTransactions, setFilteredTransactions] = useState([])
-    // *filtering by customer name
+    
     const handleFilterTypeChange = (e) => {
         setFilterType(e.target.value);
     };
@@ -74,8 +74,6 @@ export default function Transaction() {
                     />
                 </div>
             </div>
-
-            {/* Conditional rendering of filter inputs based on selected radio button */}
             {filterType === "name" && (
                 <div>
                     <input

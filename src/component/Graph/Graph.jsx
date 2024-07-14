@@ -113,7 +113,6 @@ export default function Graph() {
   const handleCustomerSelect = (customerId) => {
     setSelectedCustomerId(customerId);
   };
-
   useEffect(() => {
     handleCustomerSelect(customers.length > 0 ? customers[0].id : null);
   }, [customers]);
