@@ -1,0 +1,11 @@
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-child {
+    border-bottom: 2px solid #1b1a1a ;
+}
